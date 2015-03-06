@@ -19,15 +19,15 @@
             </div>
         </header>
         <article>
-            <img src="images/logo-mobile.svg" alt="Tecnico Lisboa" id="logo-mobile" />
             <table id="ptable">
+                <img src="images/logo-mobile.svg" alt="Tecnico Lisboa" id="logo-mobile" />
                 <tr>
                     <td>Parque</td>
                     <td>Lugares disponíveis</td>
                 </tr>
                 <tr class="{{classArcoCego}}">
                     <td>Arco do Cego</td>
-                    <td>{{slotsArcoCego}}</td>
+                    <td class="spot">{{slotsArcoCego}}</td>
                 </tr>
             </table>
         </article>

@@ -97,12 +97,12 @@ table tr:first-child td
     padding: 15px 0;
 }
 
-table tr td:nth-child(2)
+table tr .spot
 {
     text-transform: uppercase;
     font-family: 'KlavikaMediumPlain' ,'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
     float: left;
-    display: inline;
+    display: inline-block;
     color: #fff;
     padding: 20px;
     border-radius: 100px;
@@ -115,12 +115,12 @@ table tr td:nth-child(2)
     line-height: 1.5
 }
 
-table tr.full td:nth-child(2)
+table tr.full .spot
 {
     background: #f73934;
 }
 
-table tr.half td:nth-child(2)
+table tr.half .spot
 {
     background: #fdac29;
 }
@@ -163,7 +163,7 @@ table tr.half
         padding: 35px 0
     }
 
-    table tr td:nth-child(2)
+    table tr .spot
     {
         min-width: 80px;
         height: 80px;
@@ -197,7 +197,7 @@ table tr.half
         padding: 40px 0
     }
 
-    table tr td:nth-child(2)
+    table tr .spot
     {
         min-width: 60px;
         height: 60px;
@@ -231,7 +231,7 @@ table tr.half
         padding: 35px 0
     }
 
-    table tr td:nth-child(2)
+    table tr .spot
     {
         min-width: 52px;
         height: 52px;
@@ -265,7 +265,7 @@ table tr.half
         padding: 35px 0
     }
     
-    table tr td:nth-child(2)
+    table tr .spot
     {
         min-width: 46px;
         height: 46px;
@@ -277,7 +277,7 @@ table tr.half
 {
     body
     {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     header
@@ -338,7 +338,12 @@ table tr.half
         float: left;
     }
 
-    table tr td:nth-child(2)
+    table tr:first-child td:nth-child(2)
+    {
+        float: right;
+    }
+
+    table tr .spot
     {
         line-height: 1;
         min-width: 15px;
@@ -362,7 +367,7 @@ table tr.half
         display: none;
     }
 
-    table tr td:nth-child(2)
+    table tr .spot
     {
         width: 11px;
         height: 11px;
@@ -388,7 +393,7 @@ table tr:first-child td
 {
     color: #999;
     background: transparent;
-    padding: 0;
+    padding: 20px 0;
     width: auto;
     height: auto;
     font-family: 'KlavikaRegularPlain' ,'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
