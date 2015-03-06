@@ -1,0 +1,31 @@
+@font-face {
+        font-family: 'KlavikaMediumBold';
+        src: url('http://static.ist.utl.pt/fonts/klavika/klavikaboldbold-webfont.eot');
+        src: local('?'), url('http://static.ist.utl.pt/fonts/klavika/klavikaboldbold-webfont.woff') format('woff'), url('http://static.ist.utl.pt/fonts/klavika/klavikaboldbold-webfont.ttf') format('truetype'), url('http://static.ist.utl.pt/fonts/klavika/klavikaboldbold-webfont.svg#webfontTWPh10Er') format('svg');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+@font-face {
+	font-family: 'KlavikaMediumPlain';
+	src: url('http://static.ist.utl.pt/fonts/klavika/klavikamedium-plain-webfont.eot');
+	src: local('?'), url('http://static.ist.utl.pt/fonts/klavika/klavikamedium-plain-webfont.woff') format('woff'), url('http://static.ist.utl.pt/fonts/klavika/klavikamedium-plain-webfont.ttf') format('truetype'), url('http://static.ist.utl.pt/fonts/klavika/klavikamedium-plain-webfont.svg#webfontTWPh10Er') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'KlavikaRegularPlain';
+	src: url('http://static.ist.utl.pt/fonts/klavika/klavikaregular-plain-webfont.eot');
+	src: local('?'), url('http://static.ist.utl.pt/fonts/klavika/klavikaregular-plain-webfont.woff') format('woff'), url('http://static.ist.utl.pt/fonts/klavika/klavikaregular-plain-webfont.ttf') format('truetype'), url('http://static.ist.utl.pt/fonts/klavika/klavikaregular-plain-webfont.svg#webfontDvaJrdUe') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'KlavikaLightPlain';
+	src: url('http://static.ist.utl.pt/fonts/klavika/klavikalight-plain-webfont.eot');
+	src: local('?'), url('http://static.ist.utl.pt/fonts/klavika/klavikalight-plain-webfont.woff') format('woff'), url('http://static.ist.utl.pt/fonts/klavika/klavikalight-plain-webfont.ttf') format('truetype'), url('http://static.ist.utl.pt/fonts/klavika/klavikalight-plain-webfont.svg#webfontpalXHmZY') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
