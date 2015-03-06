@@ -40,13 +40,13 @@
 
             moment.locale("pt-PT");
 
-            $interval(function () {
+            var updateDate = function() {
                 var now = moment().locale("pt");
                 $scope.timeSlot = now.format("HH:mm:ss");
                 $scope.dateSlot = now.format("D MMMM YYYY");
-            }, 1000);
-            
-            $interval(function () {
+            };
+
+            var updatePark = function() {
                 $http.get(contextPath + "/info.jsp").success(function(response) {
                     var info = response['Arco Do Cego'];
                     var freeSlots = info['freeSlots'];
@@ -55,6 +55,17 @@
                     $scope.total = totalSlots;
                     $scope.classArcoCego = getOccupationClass(freeSlots, totalSlots);
                 });
+            };
+            
+            updateDate();
+            updatePark();
+
+            $interval(function () {
+                updateDate();
+            }, 1000);
+            
+            $interval(function () {
+                updatePark();
             }, 1000);
         }
 
