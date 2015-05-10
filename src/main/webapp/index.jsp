@@ -25,6 +25,10 @@
                     <td>Parque</td>
                     <td>Lugares disponíveis</td>
                 </tr>
+                <tr class="{{classAlameda}}">
+                    <td>Campus Alameda</td>
+                    <td class="spot">{{slotsAlameda}}</td>
+                </tr>
                 <tr class="{{classArcoCego}}">
                     <td>Arco do Cego</td>
                     <td class="spot">{{slotsArcoCego}}</td>
@@ -34,6 +38,8 @@
     </body>
     <script type="text/javascript">
         function reloadParkingInfo($scope, $http, $location, $interval) {
+            $scope.slotsAlameda = "";
+            $scope.classAlameda = "";
             $scope.slotsArcoCego = "";
             $scope.classArcoCego = "";
             var contextPath = '<%= request.getContextPath() %>';
@@ -48,6 +54,13 @@
 
             var updatePark = function() {
                 $http.get(contextPath + "/info.jsp").success(function(response) {
+                    var infoAlameda = response['Alameda'];
+                    var freeSlotsAlameda = infoAlameda['freeSlots'];
+                    var totalSlotsAlameda = infoAlameda['total'];
+                    $scope.slotsAlameda = freeSlotsAlameda;
+                    $scope.totalAlameda = totalSlotsAlameda;
+                    $scope.classAlameda = getOccupationClass(freeSlotsAlameda, totalSlotsAlameda);
+
                     var info = response['Arco Do Cego'];
                     var freeSlots = info['freeSlots'];
                     var totalSlots = info['total'];
