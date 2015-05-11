@@ -57,6 +57,11 @@
                     var infoAlameda = response['Alameda'];
                     var freeSlotsAlameda = infoAlameda['freeSlots'];
                     var totalSlotsAlameda = infoAlameda['total'];
+                    
+                    if (freeSlotsAlameda < 0) {
+                        freeSlotsAlameda = 0;
+                    }
+                    
                     $scope.slotsAlameda = freeSlotsAlameda;
                     $scope.totalAlameda = totalSlotsAlameda;
                     $scope.classAlameda = getOccupationClass(freeSlotsAlameda, totalSlotsAlameda);
